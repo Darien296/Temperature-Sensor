@@ -10,8 +10,6 @@ void ADC1_Init(ADC_Config_t *config)
     RCC->AHB1ENR |= RCC_AHB1ENR_GPIOAEN;
     RCC->APB2ENR |= RCC_APB2ENR_ADC1EN;
 
-    // This version assumes ADC channel maps to GPIOA pin number.
-    // Example: channel 1 = PA1 = ADC1_IN1
     GPIOA->MODER &= ~(3U << (adc_channel * 2));
     GPIOA->MODER |=  (3U << (adc_channel * 2));
 
