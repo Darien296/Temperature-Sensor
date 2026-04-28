@@ -1,0 +1,6 @@
+../Src/temp_control.c:30:6:TempControl_Init	1
+../Src/temp_control.c:36:6:TempControl_Update	1
+../Src/temp_control.c:56:14:ReadTemperatureCelsius	1
+../Src/temp_control.c:66:13:UpdateState	10
+../Src/temp_control.c:105:16:GetDutyCycleFromState	5
+../Src/temp_control.c:123:20:StateToString	5
